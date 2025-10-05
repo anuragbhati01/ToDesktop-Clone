@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+.nav-menu{
+    @apply font-medium hover:text-primary;
+}
+.nav-font{
+    @apply font-medium font-display;
+}
+.style-dialog{
+    @apply font-medium font-display text-lg block p-3 m-1 hover:bg-gray-50 rounded-lg;
+}
+
+.btn-style{
+    @apply px-8 py-3 rounded-lg;
+}
+.hero-text{
+    @apply flex justify-center items-center text-gray-500 gap-2 text-sm;
+}
+.lines-style{
+    @apply flex flex-col justify-center items-center min-w-24 min-h-24 lg:min-h-32 lg:min-w-32 bg-white rounded-xl border border-gray-300 font-medium font-display;
+}
+.grid-rows-auto{
+    grid-auto-rows: 96px;
+}
+
+
+
+
+
+@layer base{
+    .bento-container{
+        @apply px-6 py-12 mt-16 mx-auto lg:px-8 lg:mt-32 max-w-7xl;
+    }
+    h3, h2, h1{
+        @apply font-display text-gray-800;
+    }
+    .anchor-hover{
+        @apply border-b border-dotted border-gray-300 hover:border-solid hover:border-gray-500 text-gray-500;
+    }
+   .hover-outer{
+        @apply p-[1px] bg-slate-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200;
+    }
+    .hover-inner{
+        @apply  group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 group-hover:to-yellow-50;
+    }
+}
+@theme{
+    --color-primary: #3238f2;
+    --font-display: Poppins, sans-serif;
+    --font-body: Inter, sans-serif; 
+}
